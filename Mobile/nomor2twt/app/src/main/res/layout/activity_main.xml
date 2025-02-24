@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/bgbiru"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/namaProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ekoojuuu"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="-10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toBottomOf="@id/profile" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/baseline_arrow_back_24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="12dp"
+        android:scaleType="fitCenter"/>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:srcCompat="@drawable/baseline_line_weight_24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:scaleType="fitCenter"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" @ekooju"
+        android:textColor="#808080"
+        app:layout_constraintTop_toBottomOf="@id/namaProfile"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/built"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jangan lupa sholat!"
+        app:layout_constraintTop_toBottomOf="@id/username"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/advertising"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Youtuber and Streamer"
+        android:textColor="#808080"
+        app:layout_constraintTop_toBottomOf="@id/built"
+        app:layout_constraintStart_toStartOf="@id/tasKerja"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/vancover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jakarta, Indonesia"
+        android:textColor="#808080"
+        app:layout_constraintTop_toBottomOf="@id/advertising"
+        app:layout_constraintStart_toStartOf="@id/lokasi"
+        android:layout_marginStart="22dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/joined"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bergabung Januari 2019"
+        android:textColor="#808080"
+        app:layout_constraintTop_toBottomOf="@id/vancover"
+        app:layout_constraintStart_toStartOf="@id/kalender"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="3dp" />
+
+    <TextView
+        android:id="@+id/following"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mengikuti"
+        android:textColor="#808080"
+        app:layout_constraintTop_toBottomOf="@id/joined"
+        app:layout_constraintStart_toStartOf="@id/angkaFoll"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="6dp" />
+
+    <TextView
+        android:id="@+id/angkaFoll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/kalender"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="9dp" />
+
+    <ImageView
+        android:id="@+id/kalender"
+        android:layout_width="17dp"
+        android:layout_height="18dp"
+        app:srcCompat="@drawable/baseline_calendar_month_24"
+        app:tint="#808080"
+        app:layout_constraintTop_toBottomOf="@id/lokasi"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="3dp" />
+
+    <TextView
+        android:id="@+id/angkaWers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="220 K"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/joined"
+        app:layout_constraintStart_toStartOf="@id/following"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="9dp"/>
+
+    <TextView
+        android:id="@+id/followers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pengikut"
+        android:textColor="#808080"
+        app:layout_constraintTop_toBottomOf="@id/joined"
+        app:layout_constraintStart_toStartOf="@id/angkaWers"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="8dp" />
+
+    <ImageView
+        android:id="@+id/tasKerja"
+        android:layout_width="17dp"
+        android:layout_height="18dp"
+        app:srcCompat="@drawable/baseline_badge_24"
+        app:tint="#808080"
+        app:layout_constraintTop_toBottomOf="@id/built"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="3dp"/>
+
+    <ImageView
+        android:id="@+id/lokasi"
+        android:layout_width="17dp"
+        android:layout_height="18dp"
+        app:srcCompat="@drawable/baseline_add_location_24"
+        app:tint="#808080"
+        app:layout_constraintTop_toBottomOf="@id/tasKerja"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="3dp" />
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="90dp"
+        app:srcCompat="@drawable/baseline_account_circle_24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:scaleType="fitCenter"
+        android:clipToOutline="true"
+        android:elevation="6dp"/>
+
+    <ImageView
+        android:id="@+id/btnEdit"
+        android:layout_width="297dp"
+        android:layout_height="172dp"
+        app:srcCompat="@drawable/edit2"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="-45dp"
+        android:layout_marginEnd="-55dp"/>
+
+    <ImageView
+        android:id="@+id/link"
+        android:layout_width="17dp"
+        android:layout_height="18dp"
+        app:srcCompat="@drawable/baseline_insert_link_24"
+        app:tint="#808080"
+        app:layout_constraintTop_toBottomOf="@id/advertising"
+        app:layout_constraintStart_toStartOf="@id/lokasi"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="3dp" />
+
+    <TextView
+        android:id="@+id/namaLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="linktr.ee/ekooju.."
+        android:textColor="#87CEFA"
+        app:layout_constraintTop_toBottomOf="@id/advertising"
+        app:layout_constraintStart_toStartOf="@id/link"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="3dp" />
+
+    <TextView
+        android:id="@+id/tweets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tweet"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/angkaFoll"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="40dp"
+        />
+
+    <TextView
+        android:id="@+id/twtRepli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tweets &amp; replies"
+        android:textColor="#666666"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/angkaFoll"
+        app:layout_constraintStart_toStartOf="@id/tweets"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="70dp"/>
+
+    <TextView
+        android:id="@+id/media"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Media"
+        android:textColor="#666666"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/angkaFoll"
+        app:layout_constraintStart_toStartOf="@id/twtRepli"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="130dp" />
+
+    <TextView
+        android:id="@+id/likes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Likes"
+        android:textColor="#666666"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/angkaFoll"
+        app:layout_constraintStart_toStartOf="@id/media"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="60dp" />
+
+    <View
+        android:id="@+id/gariss"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#C3BDC3"
+        android:layout_marginTop="1dp"
+        app:layout_constraintTop_toBottomOf="@id/tweets"/>
+
+    <ImageView
+        android:id="@+id/profile2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/baseline_account_circle_24"
+        app:layout_constraintTop_toBottomOf="@id/pin"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-10dp"/>
+
+    <ImageView
+        android:id="@+id/pin"
+        android:layout_width="17dp"
+        android:layout_height="18dp"
+        app:srcCompat="@drawable/baseline_fmd_good_24"
+        app:tint="#666666"
+        app:layout_constraintTop_toBottomOf="@id/tweets"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/pinned"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pinned Tweet"
+        android:textColor="#666666"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tweets"
+        app:layout_constraintStart_toStartOf="@id/pin"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/wishpond2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ekooju"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/pinned"
+        app:layout_constraintStart_toStartOf="@id/profile2"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/wishpond3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" @ekooju"
+        android:textColor="#808080"
+        app:layout_constraintTop_toBottomOf="@id/pinned"
+        app:layout_constraintStart_toStartOf="@id/wishpond2"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/This"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Halo ini tweet pertama saya"
+        app:layout_constraintTop_toBottomOf="@id/wishpond2"
+        app:layout_constraintStart_toStartOf="@id/profile2"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/jason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" @donkeyyuri"
+        android:textColor="#87CEFA"
+        app:layout_constraintTop_toBottomOf="@id/This"
+        app:layout_constraintStart_toStartOf="@id/profile2"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="-2dp" />
+
+    <TextView
+        android:id="@+id/svish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" @marshaoza"
+        android:textColor="#87CEFA"
+        app:layout_constraintTop_toBottomOf="@id/This"
+        app:layout_constraintStart_toStartOf="@id/dan"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="-2dp" />
+
+    <TextView
+        android:id="@+id/dan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dan"
+        app:layout_constraintTop_toBottomOf="@id/This"
+        app:layout_constraintStart_toStartOf="@id/jason"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="-2dp"/>
+
+    <TextView
+        android:id="@+id/that"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="apa kabar?"
+        app:layout_constraintTop_toBottomOf="@id/This"
+        app:layout_constraintStart_toStartOf="@id/svish"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="-2dp" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="313dp"
+        android:layout_height="239dp"
+        app:srcCompat="@drawable/ff"
+        app:layout_constraintTop_toBottomOf="@id/jason"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="-20dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@drawable/baseline_add_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
