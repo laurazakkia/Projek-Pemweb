@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 20px;
+    margin: 0;
+    padding-top: 20px; 
+    justify-content: center;
+}
+
+.wrapper {
+    display: flex;       
+    align-items: flex-start; 
+    width: 100vw; 
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.container {
+    width: 60px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 25px; 
+    padding: 10px;
+    margin-top: 20px; 
+    padding-left: 60px; 
+    padding-right: 10px;
+}
+
+.container img {
+    width: 40px;   
+    height: auto;  
+    transform: translateX(10px); 
+}
+
+.postBTN {
+    border: 1px solid white;
+    border-radius: 40px;
+    width: 100px;
+    height: 30px;
+    margin-left: 30px;
+    margin-top: 25px;
+}
+
+.post-count {
+    font-size: 13px;
+    color: #aaa;
+}
+
+.main-content {
+    width: 80%;
+    padding-left: 60px;
+    
+
+}
+
+.header {
+    position: relative;
+}
+
+.cover {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-top: 30px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid black;
+    position: absolute;
+    bottom: -40px;
+    left: 20px;
+}
+
+.profile-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 20px 10px;
+}
+
+.profile-details h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.profile-details p {
+    margin-bottom: 6px;
+}
+
+.bio {
+    font-size: 16px;
+    font-weight: normal;
+    color: white;
+}
+
+.username {
+    color: #6c7075;
+}
+
+.details {
+    color: #6c7075;
+}
+
+.edit-profile {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    top: -10px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+
+.tabs span {
+    cursor: pointer;
+    padding: 8px;
+}
+
+.tabs .active {
+    border-bottom: 2px solid white;
+}
+
+.posts {
+    padding: 10px;
+}
+
+.post {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    border-bottom: 1px solid #444;
+}
+
+.pinned {
+    padding: 8px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    background-color: #16181c;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.pinned .post-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.pinned .post-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.pinned .post-content .username {
+    font-weight: bold;
+}
+
+.pinned .post-content .date {
+    font-size: 12px;
+    color: gray;
+}
+
+.pinned .post-content p {
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.pinned img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.right-sidebar {
+    width: 30%;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.search-bar {
+    margin-bottom: 15px;
+}
+
+.search-bar input {
+    width: 310px;
+    padding: 10px;
+    border-radius: 20px;
+    background: #16181c;
+    color: white;
+    border: none;
+}
+
+.search-bar input::placeholder {
+    color: #aaa;
+}
+
+.suggestions {
+    background: #16181c;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 310px;
+}
+
+.suggestion {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+}
+
+.suggestion:last-child {
+    border-bottom: none;
+}
+
+.suggestion-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.suggestion-info {
+    flex: 1;
+}
+
+.suggestion-info p {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.follow-btn {
+    background: white;
+    color: black;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.trending {
+    background: #16181c;
+    padding: 15px;
+    border-radius: 10px;
+    width: 310px;
+    color: white;
+}
+
+.trending h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px; 
+}
+
+.trending-item {
+    border-bottom: 1px solid #333;
+    padding: 10px 0;
+}
+
+.trending-item:last-child {
+    border-bottom: none;
+}
+
+.trending-item small {
+    color: gray;
+    font-size: 12px;
+}
+
+.trending-item p {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 4px 0;
+}
+
+.trending-item span {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.stats {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.stats span {
+    white-space: nowrap;
+}
+
+.stats span strong {
+    font-weight: bold;
+}
